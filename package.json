@@ -1,0 +1,28 @@
+{
+  "name": "alternate-file-delete",
+  "version": "1.0.0",
+  "description": "Delete alternate files in a given directory",
+  "main": "Index.js",
+  "bin": {
+    "afd": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashwin-droid/alternate-file-deletor.git"
+  },
+  "keywords": [
+    "file",
+    "delete",
+    "filesystem",
+    "operation"
+  ],
+  "author": "Ashwin_droid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashwin-droid/alternate-file-deletor/issues"
+  },
+  "homepage": "https://github.com/Ashwin-droid/alternate-file-deletor#readme"
+}
