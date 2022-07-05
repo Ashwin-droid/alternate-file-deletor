@@ -1,6 +1,6 @@
 {
   "name": "alternate-file-delete",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Delete alternate files in a given directory",
   "main": "Index.js",
   "bin": {
@@ -20,7 +20,7 @@
     "operation"
   ],
   "author": "Ashwin_droid",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ashwin-droid/alternate-file-deletor/issues"
   },
