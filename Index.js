@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const { readdirSync, unlinkSync, existsSync } = require("fs");
 
 //get the command line arguments
@@ -14,17 +15,20 @@ try {
 }
 
 // get all files in the current directory and return an array of file names synchronously
-const files = readdirSync(args[0]);
+const files = readdirSync(args[0], { withFileTypes: true });
 // get the files numbers and return an array of even numbers
 var ticker = true;
 var prey = [];
 for (let fileName of files) {
-  if (fileName === "index.js") {
-    break;
+  if (fileName.name.toString() == "index.js") {
+    continue;
+  }
+  if (!fileName.isFile()) {
+    continue;
   }
   if (ticker) {
     ticker = false;
-    prey.push(fileName.toString());
+    prey.push(fileName.name.toString());
   } else {
     ticker = true;
   }
